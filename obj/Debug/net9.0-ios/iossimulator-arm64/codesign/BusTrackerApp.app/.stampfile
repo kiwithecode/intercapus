@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/kiwimac/CascadeProjects/BusTrackerApp/obj/Debug/net9.0-ios/iossimulator-arm64/Entitlements.xcent /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/BusTrackerApp.app

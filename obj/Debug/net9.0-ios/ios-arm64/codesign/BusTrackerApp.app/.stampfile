@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign 42D9116CD704F7DBFF992DF45A880A033F939983 --entitlements /Users/kiwimac/CascadeProjects/BusTrackerApp/obj/Debug/net9.0-ios/ios-arm64/Entitlements.xcent /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/ios-arm64/BusTrackerApp.app

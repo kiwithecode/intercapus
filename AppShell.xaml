@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="BusTrackerApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:BusTrackerApp.Views"
+    Title="BusTrackerApp"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate views:LoginPage}"
+        Route="LoginPage" />
+
+    <ShellContent
+        Title="Pasajero"
+        ContentTemplate="{DataTemplate views:PassengerPage}"
+        Route="PassengerPage" />
+
+    <ShellContent
+        Title="Conductor"
+        ContentTemplate="{DataTemplate views:DriverPage}"
+        Route="DriverPage" />
+
+</Shell>

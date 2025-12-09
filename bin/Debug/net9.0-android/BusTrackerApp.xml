@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BusTrackerApp</name>
+    </assembly>
+    <members>
+        <member name="T:BusTrackerApp.ViewModels.DriverViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.DriverViewModel.AssignedBus">
+            <inheritdoc cref="F:BusTrackerApp.ViewModels.DriverViewModel.assignedBus"/>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.DriverViewModel.CurrentRoute">
+            <inheritdoc cref="F:BusTrackerApp.ViewModels.DriverViewModel.currentRoute"/>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.DriverViewModel.CurrentLocation">
+            <inheritdoc cref="F:BusTrackerApp.ViewModels.DriverViewModel.currentLocation"/>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.DriverViewModel.IsTracking">
+            <inheritdoc cref="F:BusTrackerApp.ViewModels.DriverViewModel.isTracking"/>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.DriverViewModel.IsSimulating">
+            <inheritdoc cref="F:BusTrackerApp.ViewModels.DriverViewModel.isSimulating"/>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.DriverViewModel.CurrentMode">
+            <inheritdoc cref="F:BusTrackerApp.ViewModels.DriverViewModel.currentMode"/>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.DriverViewModel.RoutePoints">
+            <inheritdoc cref="F:BusTrackerApp.ViewModels.DriverViewModel.routePoints"/>
+        </member>
+        <member name="F:BusTrackerApp.ViewModels.DriverViewModel.startTrackingCommand">
+            <summary>The backing field for <see cref="P:BusTrackerApp.ViewModels.DriverViewModel.StartTrackingCommand"/>.</summary>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.DriverViewModel.StartTrackingCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BusTrackerApp.ViewModels.DriverViewModel.StartTrackingAsync"/>.</summary>
+        </member>
+        <member name="F:BusTrackerApp.ViewModels.DriverViewModel.stopTrackingCommand">
+            <summary>The backing field for <see cref="P:BusTrackerApp.ViewModels.DriverViewModel.StopTrackingCommand"/>.</summary>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.DriverViewModel.StopTrackingCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BusTrackerApp.ViewModels.DriverViewModel.StopTrackingAsync"/>.</summary>
+        </member>
+        <member name="F:BusTrackerApp.ViewModels.DriverViewModel.startSimulationCommand">
+            <summary>The backing field for <see cref="P:BusTrackerApp.ViewModels.DriverViewModel.StartSimulationCommand"/>.</summary>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.DriverViewModel.StartSimulationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BusTrackerApp.ViewModels.DriverViewModel.StartSimulationAsync"/>.</summary>
+        </member>
+        <member name="F:BusTrackerApp.ViewModels.DriverViewModel.stopSimulationCommand">
+            <summary>The backing field for <see cref="P:BusTrackerApp.ViewModels.DriverViewModel.StopSimulationCommand"/>.</summary>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.DriverViewModel.StopSimulationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BusTrackerApp.ViewModels.DriverViewModel.StopSimulationAsync"/>.</summary>
+        </member>
+        <member name="F:BusTrackerApp.ViewModels.DriverViewModel.logoutCommand">
+            <summary>The backing field for <see cref="P:BusTrackerApp.ViewModels.DriverViewModel.LogoutCommand"/>.</summary>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.DriverViewModel.LogoutCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BusTrackerApp.ViewModels.DriverViewModel.LogoutAsync"/>.</summary>
+        </member>
+        <member name="T:BusTrackerApp.ViewModels.LoginViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.LoginViewModel.Email">
+            <inheritdoc cref="F:BusTrackerApp.ViewModels.LoginViewModel.email"/>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.LoginViewModel.Password">
+            <inheritdoc cref="F:BusTrackerApp.ViewModels.LoginViewModel.password"/>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.LoginViewModel.IsBusy">
+            <inheritdoc cref="F:BusTrackerApp.ViewModels.LoginViewModel.isBusy"/>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.LoginViewModel.ErrorMessage">
+            <inheritdoc cref="F:BusTrackerApp.ViewModels.LoginViewModel.errorMessage"/>
+        </member>
+        <member name="F:BusTrackerApp.ViewModels.LoginViewModel.loginCommand">
+            <summary>The backing field for <see cref="P:BusTrackerApp.ViewModels.LoginViewModel.LoginCommand"/>.</summary>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.LoginViewModel.LoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BusTrackerApp.ViewModels.LoginViewModel.LoginAsync"/>.</summary>
+        </member>
+        <member name="T:BusTrackerApp.ViewModels.PassengerViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.PassengerViewModel.ActiveBuses">
+            <inheritdoc cref="F:BusTrackerApp.ViewModels.PassengerViewModel.activeBuses"/>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.PassengerViewModel.AvailableRoutes">
+            <inheritdoc cref="F:BusTrackerApp.ViewModels.PassengerViewModel.availableRoutes"/>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.PassengerViewModel.IsLoading">
+            <inheritdoc cref="F:BusTrackerApp.ViewModels.PassengerViewModel.isLoading"/>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.PassengerViewModel.CurrentLocation">
+            <inheritdoc cref="F:BusTrackerApp.ViewModels.PassengerViewModel.currentLocation"/>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.PassengerViewModel.SelectedRouteId">
+            <inheritdoc cref="F:BusTrackerApp.ViewModels.PassengerViewModel.selectedRouteId"/>
+        </member>
+        <member name="F:BusTrackerApp.ViewModels.PassengerViewModel.loadBusesCommand">
+            <summary>The backing field for <see cref="P:BusTrackerApp.ViewModels.PassengerViewModel.LoadBusesCommand"/>.</summary>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.PassengerViewModel.LoadBusesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BusTrackerApp.ViewModels.PassengerViewModel.LoadBusesAsync"/>.</summary>
+        </member>
+        <member name="F:BusTrackerApp.ViewModels.PassengerViewModel.loadRoutesCommand">
+            <summary>The backing field for <see cref="P:BusTrackerApp.ViewModels.PassengerViewModel.LoadRoutesCommand"/>.</summary>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.PassengerViewModel.LoadRoutesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BusTrackerApp.ViewModels.PassengerViewModel.LoadRoutesAsync"/>.</summary>
+        </member>
+        <member name="F:BusTrackerApp.ViewModels.PassengerViewModel.selectRouteCommand">
+            <summary>The backing field for <see cref="P:BusTrackerApp.ViewModels.PassengerViewModel.SelectRouteCommand"/>.</summary>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.PassengerViewModel.SelectRouteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:BusTrackerApp.ViewModels.PassengerViewModel.SelectRouteAsync(System.String)"/>.</summary>
+        </member>
+        <member name="F:BusTrackerApp.ViewModels.PassengerViewModel.logoutCommand">
+            <summary>The backing field for <see cref="P:BusTrackerApp.ViewModels.PassengerViewModel.LogoutCommand"/>.</summary>
+        </member>
+        <member name="P:BusTrackerApp.ViewModels.PassengerViewModel.LogoutCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BusTrackerApp.ViewModels.PassengerViewModel.LogoutAsync"/>.</summary>
+        </member>
+        <member name="T:BusTrackerApp.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AssignedBus">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AssignedBus" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CurrentRoute">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CurrentRoute" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CurrentLocation">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CurrentLocation" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsTracking">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsTracking" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsSimulating">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsSimulating" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CurrentMode">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CurrentMode" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.RoutePoints">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "RoutePoints" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Email">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Email" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Password">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Password" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ActiveBuses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ActiveBuses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AvailableRoutes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AvailableRoutes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsLoading">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsLoading" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedRouteId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedRouteId" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AssignedBus">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AssignedBus" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CurrentRoute">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CurrentRoute" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CurrentLocation">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CurrentLocation" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsTracking">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsTracking" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsSimulating">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsSimulating" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CurrentMode">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CurrentMode" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.RoutePoints">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "RoutePoints" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Email">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Email" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Password">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Password" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ActiveBuses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ActiveBuses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AvailableRoutes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AvailableRoutes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsLoading">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsLoading" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedRouteId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedRouteId" generated properties.</summary>
+        </member>
+    </members>
+</doc>

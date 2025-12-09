@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
+             xmlns:viewmodels="clr-namespace:BusTrackerApp.ViewModels"
+             xmlns:models="clr-namespace:BusTrackerApp.Models"
+             x:Class="BusTrackerApp.Views.DriverPage"
+             x:DataType="viewmodels:DriverViewModel"
+             Title="Modo Conductor">
+
+    <Grid RowDefinitions="Auto,*,Auto">
+        
+        <!-- Header con información del bus -->
+        <Border Grid.Row="0" 
+                BackgroundColor="{StaticResource Primary}"
+                Padding="15"
+                StrokeThickness="0">
+            <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto">
+                <Label Text="{Binding AssignedBus.BusNumber, StringFormat='Bus {0}'}" 
+                       FontSize="24" 
+                       FontAttributes="Bold"
+                       TextColor="White"/>
+                <Label Grid.Row="1" 
+                       Text="{Binding CurrentRoute.Name}" 
+                       FontSize="14"
+                       TextColor="White"
+                       Opacity="0.9"/>
+                <Label Grid.Column="1" 
+                       Grid.RowSpan="2"
+                       Text="●" 
+                       TextColor="LimeGreen"
+                       FontSize="30"
+                       VerticalOptions="Center"
+                       IsVisible="{Binding IsTracking}"/>
+            </Grid>
+        </Border>
+
+        <!-- Mapa con ruta -->
+        <maps:Map x:Name="map" 
+                  Grid.Row="1"
+                  IsShowingUser="True"
+                  MapType="Street"/>
+
+        <!-- Panel de control -->
+        <Border Grid.Row="2" 
+                BackgroundColor="White"
+                StrokeThickness="0"
+                Padding="15"
+                StrokeShape="RoundRectangle 20,20,0,0">
+            <VerticalStackLayout Spacing="15">
+                
+                <!-- Modo actual -->
+                <Border StrokeThickness="2"
+                       Stroke="{StaticResource Primary}"
+                       BackgroundColor="{StaticResource Primary}"
+                       Padding="8"
+                       StrokeShape="RoundRectangle 8"
+                       Opacity="0.9">
+                    <Label Text="{Binding CurrentMode}"
+                           FontSize="14"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           HorizontalOptions="Center"/>
+                </Border>
+
+                <!-- Botones de modo de operación -->
+                <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                    <Button Text="🎮 Modo Demo"
+                            Command="{Binding StartSimulationCommand}"
+                            IsEnabled="{Binding IsSimulating, Converter={StaticResource InvertedBoolConverter}}"
+                            BackgroundColor="#AF52DE"
+                            TextColor="White"
+                            CornerRadius="10"
+                            FontSize="13"/>
+
+                    <Button Grid.Column="1"
+                            Text="⏹ Detener Demo"
+                            Command="{Binding StopSimulationCommand}"
+                            IsEnabled="{Binding IsSimulating}"
+                            BackgroundColor="#FF3B30"
+                            TextColor="White"
+                            CornerRadius="10"
+                            FontSize="13"/>
+                </Grid>
+
+                <!-- Puntos de ruta -->
+                <Label Text="Puntos de Ruta"
+                       FontSize="18"
+                       FontAttributes="Bold"/>
+
+                <CollectionView ItemsSource="{Binding RoutePoints}"
+                               MaximumHeightRequest="150">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:RoutePoint">
+                            <Border StrokeThickness="1"
+                                   Stroke="{StaticResource Gray200}"
+                                   BackgroundColor="{StaticResource Gray100}"
+                                   Padding="10"
+                                   Margin="0,3"
+                                   StrokeShape="RoundRectangle 8">
+                                <Grid ColumnDefinitions="Auto,*" ColumnSpacing="10">
+                                    <Border BackgroundColor="{StaticResource Primary}"
+                                           WidthRequest="30"
+                                           HeightRequest="30"
+                                           StrokeThickness="0"
+                                           StrokeShape="RoundRectangle 15">
+                                        <Label Text="{Binding Order, StringFormat='{0}'}" 
+                                               TextColor="White"
+                                               FontAttributes="Bold"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="Center"/>
+                                    </Border>
+                                    <Label Grid.Column="1" 
+                                           Text="{Binding Name}" 
+                                           FontSize="14"
+                                           VerticalOptions="Center"/>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <!-- Botones de control -->
+                <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                    <Button Text="▶ Iniciar Ruta" 
+                            Command="{Binding StartTrackingCommand}"
+                            IsVisible="{Binding IsTracking, Converter={StaticResource InvertedBoolConverter}}"
+                            BackgroundColor="{StaticResource Primary}"
+                            TextColor="White"
+                            CornerRadius="10"/>
+                    
+                    <Button Text="⏸ Pausar Ruta" 
+                            Command="{Binding StopTrackingCommand}"
+                            IsVisible="{Binding IsTracking}"
+                            BackgroundColor="Orange"
+                            TextColor="White"
+                            CornerRadius="10"/>
+
+                    <Button Grid.Column="1"
+                            Text="Cerrar Sesión" 
+                            Command="{Binding LogoutCommand}"
+                            BackgroundColor="{StaticResource Gray300}"
+                            TextColor="{StaticResource Gray900}"
+                            CornerRadius="10"/>
+                </Grid>
+
+                <!-- Información de ubicación actual -->
+                <Border StrokeThickness="1"
+                       Stroke="{StaticResource Gray200}"
+                       BackgroundColor="{StaticResource Gray100}"
+                       Padding="10"
+                       StrokeShape="RoundRectangle 8"
+                       IsVisible="{Binding CurrentLocation, Converter={StaticResource IsNotNullConverter}}">
+                    <VerticalStackLayout Spacing="3">
+                        <Label Text="📍 Ubicación Actual" 
+                               FontSize="12" 
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource Gray600}"/>
+                        <Label FontSize="11" TextColor="{StaticResource Gray600}">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Lat: "/>
+                                    <Span Text="{Binding CurrentLocation.Latitude, StringFormat='{0:F6}'}"/>
+                                    <Span Text=" | Lng: "/>
+                                    <Span Text="{Binding CurrentLocation.Longitude, StringFormat='{0:F6}'}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </VerticalStackLayout>
+                </Border>
+
+            </VerticalStackLayout>
+        </Border>
+
+    </Grid>
+
+</ContentPage>

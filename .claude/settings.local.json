@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(dotnet workload:*)",
+      "Bash(sudo dotnet workload:*)",
+      "Bash(dotnet --version:*)",
+      "Bash(xcode-select:*)",
+      "Bash(xcodebuild:*)",
+      "Bash(dotnet build:*)",
+      "Bash(chmod:*)",
+      "Bash(xcrun simctl:*)",
+      "Bash(./run-ios.sh:*)",
+      "Bash(adb devices:*)",
+      "Bash(emulator -list-avds:*)",
+      "Bash(./run-android.sh:*)",
+      "Bash(adb shell pm list packages:*)",
+      "Bash(adb shell monkey:*)",
+      "Bash(security find-identity:*)",
+      "Bash(xcrun xctrace:*)",
+      "Bash(open BusTrackerApp.csproj -a Xcode)",
+      "Bash(open:*)",
+      "Bash(./deploy-to-iphone.sh)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
