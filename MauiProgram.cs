@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Logging;
 using BusTrackerApp.Services;
+using BusTrackerApp.Services.Interfaces;
 using BusTrackerApp.ViewModels;
 using BusTrackerApp.Views;
 
@@ -25,8 +26,9 @@ public static class MauiProgram
 		builder.Services.AddSingleton<ILocationService, LocationService>();
 		builder.Services.AddSingleton<IRouteSimulationService, RouteSimulationService>();
 
-		// Registrar Supabase Service (Singleton para mantener una única conexión)
+		// Registrar Supabase Services
 		builder.Services.AddSingleton<SupabaseService>(sp => SupabaseService.Instance);
+		builder.Services.AddSingleton<ISupabaseBusService, SupabaseBusService>();
 
 		// Registrar ViewModels
 		builder.Services.AddTransient<LoginViewModel>();

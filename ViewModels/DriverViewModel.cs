@@ -2,13 +2,14 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using BusTrackerApp.Models;
 using BusTrackerApp.Services;
+using BusTrackerApp.Services.Interfaces;
 using System.Collections.ObjectModel;
 
 namespace BusTrackerApp.ViewModels;
 
 public partial class DriverViewModel : ObservableObject
 {
-    private readonly IBusService _busService;
+    private readonly ISupabaseBusService _supabaseBusService;
     private readonly ILocationService _locationService;
     private readonly IRouteSimulationService _simulationService;
     private readonly IAuthService _authService;
@@ -35,12 +36,12 @@ public partial class DriverViewModel : ObservableObject
     private ObservableCollection<RoutePoint> routePoints = new();
 
     public DriverViewModel(
-        IBusService busService,
+        ISupabaseBusService supabaseBusService,
         ILocationService locationService,
         IRouteSimulationService simulationService,
         IAuthService authService)
     {
-        _busService = busService;
+        _supabaseBusService = supabaseBusService;
         _locationService = locationService;
         _simulationService = simulationService;
         _authService = authService;
@@ -53,10 +54,16 @@ public partial class DriverViewModel : ObservableObject
     {
         CurrentLocation = location;
 
-        // Actualizar ubicación del bus en el servidor
+        // Actualizar ubicación del bus en Supabase
         if (AssignedBus != null)
         {
-            await _busService.UpdateBusLocationAsync(AssignedBus.Id, location);
+            await _supabaseBusService.UpdateBusLocationAsync(AssignedBus.Id, location);
+            // Guardar en historial con datos de GPS
+            await _supabaseBusService.SaveLocationHistoryAsync(
+                AssignedBus.Id,
+                location,
+                speed: location.Speed,
+                accuracy: location.Accuracy);
         }
     }
 
@@ -64,10 +71,16 @@ public partial class DriverViewModel : ObservableObject
     {
         CurrentLocation = location;
 
-        // Actualizar ubicación del bus en el servidor
+        // Actualizar ubicación del bus en Supabase (simulación)
         if (AssignedBus != null)
         {
-            await _busService.UpdateBusLocationAsync(AssignedBus.Id, location);
+            await _supabaseBusService.UpdateBusLocationAsync(AssignedBus.Id, location);
+            // Guardar en historial (simulación no tiene speed/accuracy reales)
+            await _supabaseBusService.SaveLocationHistoryAsync(
+                AssignedBus.Id,
+                location,
+                speed: null,
+                accuracy: null);
         }
     }
 
@@ -131,10 +144,12 @@ public partial class DriverViewModel : ObservableObject
         var user = _authService.CurrentUser;
         if (user?.AssignedBusId != null)
         {
-            AssignedBus = await _busService.GetBusByIdAsync(user.AssignedBusId);
+            // Obtener el bus asignado desde Supabase
+            AssignedBus = await _supabaseBusService.GetBusByIdAsync(user.AssignedBusId);
             if (AssignedBus != null)
             {
-                CurrentRoute = await _busService.GetBusRouteAsync(AssignedBus.Id);
+                // Obtener la ruta asignada desde Supabase
+                CurrentRoute = await _supabaseBusService.GetBusRouteAsync(AssignedBus.Id);
                 if (CurrentRoute != null)
                 {
                     RoutePoints.Clear();
@@ -145,5 +160,7 @@ public partial class DriverViewModel : ObservableObject
                 }
             }
         }
+
+        System.Diagnostics.Debug.WriteLine($"✅ DriverViewModel inicializado - Bus: {AssignedBus?.BusNumber}, Ruta: {CurrentRoute?.Name}");
     }
 }

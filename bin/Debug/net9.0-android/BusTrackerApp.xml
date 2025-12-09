@@ -12,12 +12,18 @@
         <member name="F:BusTrackerApp.Configuration.SupabaseConfig.SupabaseUrl">
             <summary>
             URL del proyecto Supabase INTERCAPUS
-            Ejemplo: "https://abcdefghijklmnop.supabase.co"
             </summary>
         </member>
         <member name="F:BusTrackerApp.Configuration.SupabaseConfig.SupabaseAnonKey">
             <summary>
             Clave pública/anon de Supabase (es segura para el cliente)
+            IMPORTANTE: Necesitas obtener esta clave de tu proyecto Supabase
+            Ve a: Settings → API → Project API keys → anon/public
+            </summary>
+        </member>
+        <member name="F:BusTrackerApp.Configuration.SupabaseConfig.DatabaseHost">
+            <summary>
+            Host de la base de datos PostgreSQL (solo para referencia, no se usa en el cliente)
             </summary>
         </member>
         <member name="T:BusTrackerApp.Helpers.ModelConverter">
@@ -28,6 +34,76 @@
         <member name="T:BusTrackerApp.Models.Supabase.BusFullInfo">
             <summary>
             Representa un bus con toda su información relacionada (ruta y conductor)
+            </summary>
+        </member>
+        <member name="T:BusTrackerApp.Services.Interfaces.ISupabaseBusService">
+            <summary>
+            Interfaz para operaciones de buses con Supabase
+            </summary>
+        </member>
+        <member name="M:BusTrackerApp.Services.Interfaces.ISupabaseBusService.GetActiveBusesAsync">
+            <summary>
+            Obtiene todos los buses activos desde Supabase
+            </summary>
+        </member>
+        <member name="M:BusTrackerApp.Services.Interfaces.ISupabaseBusService.GetBusByIdAsync(System.String)">
+            <summary>
+            Obtiene un bus específico por su ID
+            </summary>
+        </member>
+        <member name="M:BusTrackerApp.Services.Interfaces.ISupabaseBusService.UpdateBusLocationAsync(System.String,BusTrackerApp.Models.GeoLocation)">
+            <summary>
+            Actualiza la ubicación de un bus en Supabase
+            </summary>
+        </member>
+        <member name="M:BusTrackerApp.Services.Interfaces.ISupabaseBusService.GetBusRouteAsync(System.String)">
+            <summary>
+            Obtiene la ruta asignada a un bus
+            </summary>
+        </member>
+        <member name="M:BusTrackerApp.Services.Interfaces.ISupabaseBusService.GetAllRoutesAsync">
+            <summary>
+            Obtiene todas las rutas disponibles
+            </summary>
+        </member>
+        <member name="M:BusTrackerApp.Services.Interfaces.ISupabaseBusService.SaveLocationHistoryAsync(System.String,BusTrackerApp.Models.GeoLocation,System.Nullable{System.Double},System.Nullable{System.Double})">
+            <summary>
+            Guarda la ubicación en el historial
+            </summary>
+        </member>
+        <member name="T:BusTrackerApp.Services.SupabaseBusService">
+            <summary>
+            Servicio para gestionar buses y rutas usando Supabase
+            </summary>
+        </member>
+        <member name="M:BusTrackerApp.Services.SupabaseBusService.GetActiveBusesAsync">
+            <summary>
+            Obtiene todos los buses activos desde Supabase
+            </summary>
+        </member>
+        <member name="M:BusTrackerApp.Services.SupabaseBusService.GetBusByIdAsync(System.String)">
+            <summary>
+            Obtiene un bus específico por su ID
+            </summary>
+        </member>
+        <member name="M:BusTrackerApp.Services.SupabaseBusService.UpdateBusLocationAsync(System.String,BusTrackerApp.Models.GeoLocation)">
+            <summary>
+            Actualiza la ubicación de un bus en Supabase
+            </summary>
+        </member>
+        <member name="M:BusTrackerApp.Services.SupabaseBusService.GetBusRouteAsync(System.String)">
+            <summary>
+            Obtiene la ruta asignada a un bus
+            </summary>
+        </member>
+        <member name="M:BusTrackerApp.Services.SupabaseBusService.GetAllRoutesAsync">
+            <summary>
+            Obtiene todas las rutas disponibles
+            </summary>
+        </member>
+        <member name="M:BusTrackerApp.Services.SupabaseBusService.SaveLocationHistoryAsync(System.String,BusTrackerApp.Models.GeoLocation,System.Nullable{System.Double},System.Nullable{System.Double})">
+            <summary>
+            Guarda la ubicación en el historial
             </summary>
         </member>
         <member name="T:BusTrackerApp.ViewModels.DriverViewModel">

@@ -2,13 +2,14 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using BusTrackerApp.Models;
 using BusTrackerApp.Services;
+using BusTrackerApp.Services.Interfaces;
 using System.Collections.ObjectModel;
 
 namespace BusTrackerApp.ViewModels;
 
 public partial class PassengerViewModel : ObservableObject
 {
-    private readonly IBusService _busService;
+    private readonly ISupabaseBusService _supabaseBusService;
     private readonly IAuthService _authService;
     private CancellationTokenSource? _updateCancellation;
 
@@ -27,9 +28,9 @@ public partial class PassengerViewModel : ObservableObject
     [ObservableProperty]
     private string? selectedRouteId;
 
-    public PassengerViewModel(IBusService busService, IAuthService authService)
+    public PassengerViewModel(ISupabaseBusService supabaseBusService, IAuthService authService)
     {
-        _busService = busService;
+        _supabaseBusService = supabaseBusService;
         _authService = authService;
     }
 
@@ -39,7 +40,8 @@ public partial class PassengerViewModel : ObservableObject
         IsLoading = true;
         try
         {
-            var buses = await _busService.GetActiveBusesAsync();
+            // Obtener buses activos desde Supabase
+            var buses = await _supabaseBusService.GetActiveBusesAsync();
 
             // Filtrar por ruta si hay una seleccionada
             if (!string.IsNullOrEmpty(SelectedRouteId))
@@ -52,10 +54,12 @@ public partial class PassengerViewModel : ObservableObject
             {
                 ActiveBuses.Add(bus);
             }
+
+            System.Diagnostics.Debug.WriteLine($"✅ PassengerViewModel cargó {buses.Count} buses desde Supabase");
         }
         catch (Exception ex)
         {
-            System.Diagnostics.Debug.WriteLine($"Error cargando buses: {ex.Message}");
+            System.Diagnostics.Debug.WriteLine($"❌ Error cargando buses: {ex.Message}");
         }
         finally
         {
@@ -68,16 +72,19 @@ public partial class PassengerViewModel : ObservableObject
     {
         try
         {
-            var routes = await _busService.GetAllRoutesAsync();
+            // Obtener todas las rutas desde Supabase
+            var routes = await _supabaseBusService.GetAllRoutesAsync();
             AvailableRoutes.Clear();
             foreach (var route in routes)
             {
                 AvailableRoutes.Add(route);
             }
+
+            System.Diagnostics.Debug.WriteLine($"✅ PassengerViewModel cargó {routes.Count} rutas desde Supabase");
         }
         catch (Exception ex)
         {
-            System.Diagnostics.Debug.WriteLine($"Error cargando rutas: {ex.Message}");
+            System.Diagnostics.Debug.WriteLine($"❌ Error cargando rutas: {ex.Message}");
         }
     }
 
@@ -92,7 +99,6 @@ public partial class PassengerViewModel : ObservableObject
     async Task LogoutAsync()
     {
         StopRealTimeUpdates();
-        _busService.StopBusSimulation();
         await _authService.LogoutAsync();
         await Shell.Current.GoToAsync("//LoginPage");
     }
@@ -102,11 +108,10 @@ public partial class PassengerViewModel : ObservableObject
         await LoadRoutesAsync();
         await LoadBusesAsync();
 
-        // Iniciar simulación de movimiento de buses
-        _busService.StartBusSimulation();
-
-        // Actualización periódica más frecuente para ver el movimiento suave
+        // Iniciar polling de actualizaciones en tiempo real desde Supabase
         StartRealTimeUpdates();
+
+        System.Diagnostics.Debug.WriteLine("✅ PassengerViewModel inicializado con polling cada 2 segundos");
     }
 
     private void StartRealTimeUpdates()
