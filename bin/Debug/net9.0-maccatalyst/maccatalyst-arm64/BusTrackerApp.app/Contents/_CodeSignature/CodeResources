@@ -51,14 +51,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			clijuLGWWfyXpx6PapdVLPZuz/xWlF6pKzYGhTEXBkU=
+			cIHRP4UvItWySZsBaIohv95bpcG0wqxC2yXqs4iMrPA=
 			</data>
 		</dict>
 		<key>MonoBundle/BusTrackerApp.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vU2JgLowKOombbcmWCWo1jwpKI9Ow1j41cem+Dc1Ync=
+			6tzo1HzfXLwWCu8/eKWgwVidyZn5zDl+D0Ctk6heCQk=
 			</data>
 		</dict>
 		<key>MonoBundle/CommunityToolkit.Mvvm.dll</key>
@@ -136,6 +136,34 @@
 			<key>hash2</key>
 			<data>
 			LpX4lYnrAPbD+mp4bIFn/jEPi4MuopGxI/SF2rI9+O4=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.IdentityModel.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nhrx757uwJX2kjpIAc/GgRfCBMdnvkvMExEvPHiUzDY=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.IdentityModel.JsonWebTokens.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AeWD1X0bTGZ9t8oukySUfn2QthF5H+FBiEhnFKL/Phg=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.IdentityModel.Logging.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Uf1aYj57Qkm3YXagQpjOd+WdKaIa32/IA08luE2e7rA=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.IdentityModel.Tokens.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Dlb1HkcNQzTM625LRx0Ox3ZFz8YuqFzdvFNOMW3Kpe0=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.MacCatalyst.dll</key>
@@ -227,6 +255,69 @@
 			<key>hash2</key>
 			<data>
 			8OYDdcGN7x++0ct0wcHQxUC8qYHrikSqyjQ3PyN7oeM=
+			</data>
+		</dict>
+		<key>MonoBundle/MimeMapping.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Uw2YkoNwV+KXzYjSxhmBCoS7aqcCLIHIc5b7GBM/sKU=
+			</data>
+		</dict>
+		<key>MonoBundle/Newtonsoft.Json.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IsZJ91/OW+fHzNqIgEc7Y072ns8z9dGritiSyvR9Wgc=
+			</data>
+		</dict>
+		<key>MonoBundle/Supabase.Core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IyJ3U7gatHq3+N3cJpPWezjCB1xxF2rqrr6PLof2bhU=
+			</data>
+		</dict>
+		<key>MonoBundle/Supabase.Functions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Z+YCS9cpyvUx04ceOl3MBxA9PC0J6uRb7f86F7VrOCI=
+			</data>
+		</dict>
+		<key>MonoBundle/Supabase.Gotrue.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UcxSmsz6/Hc3eBKnLjxVPtidf9uO5PK2WOzWRFdBLiw=
+			</data>
+		</dict>
+		<key>MonoBundle/Supabase.Postgrest.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B7IXAtGBpBwjc/383wN262O4DIVJ2mH4wdn2SPLyils=
+			</data>
+		</dict>
+		<key>MonoBundle/Supabase.Realtime.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7qd9LyKergGKBs564DrX6OQV6tllRlhiY6arD4kD9zw=
+			</data>
+		</dict>
+		<key>MonoBundle/Supabase.Storage.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BwPLo7bxSlBtVtdJmhv1jng3yimReawmgSLt8vzWons=
+			</data>
+		</dict>
+		<key>MonoBundle/Supabase.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m1AST+kDCY7bYoIBff1xB9Tmcnot3FXs5ruNEeRwN1w=
 			</data>
 		</dict>
 		<key>MonoBundle/System.AppContext.dll</key>
@@ -600,6 +691,13 @@
 			A3As7sZDztSYvUxTpZWg/SLdX0aSmSFj9L0lp9oFags=
 			</data>
 		</dict>
+		<key>MonoBundle/System.IdentityModel.Tokens.Jwt.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m+3hRysA2R62CFiThrC+Cb2kRI47YyV19KEK0zaW3Y0=
+			</data>
+		</dict>
 		<key>MonoBundle/System.Linq.Expressions.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -829,6 +927,13 @@
 			<key>hash2</key>
 			<data>
 			je2aMtVC9MbTzcKEYOlq/qhpxrOubs0OtYF+kWsLuoE=
+			</data>
+		</dict>
+		<key>MonoBundle/System.Reactive.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			K2wx37H8YBmkKgB+0OXgBXTebqDEf+0MooK/O7J3Gww=
 			</data>
 		</dict>
 		<key>MonoBundle/System.Reflection.DispatchProxy.dll</key>
@@ -1361,6 +1466,13 @@
 			<key>hash2</key>
 			<data>
 			vZ4c3C5gWPCZYUXfoRLyiK+TdsCqezJvElIQySTjkrU=
+			</data>
+		</dict>
+		<key>MonoBundle/Websocket.Client.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Tm+7hqp/3IOsYKh8baYFWgidjYW8yJ5MdSuKg0Ftc7Q=
 			</data>
 		</dict>
 		<key>MonoBundle/WindowsBase.dll</key>

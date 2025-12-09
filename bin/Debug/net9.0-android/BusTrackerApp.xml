@@ -4,6 +4,32 @@
         <name>BusTrackerApp</name>
     </assembly>
     <members>
+        <member name="T:BusTrackerApp.Configuration.SupabaseConfig">
+            <summary>
+            Configuración de Supabase para el proyecto INTERCAPUS
+            </summary>
+        </member>
+        <member name="F:BusTrackerApp.Configuration.SupabaseConfig.SupabaseUrl">
+            <summary>
+            URL del proyecto Supabase INTERCAPUS
+            Ejemplo: "https://abcdefghijklmnop.supabase.co"
+            </summary>
+        </member>
+        <member name="F:BusTrackerApp.Configuration.SupabaseConfig.SupabaseAnonKey">
+            <summary>
+            Clave pública/anon de Supabase (es segura para el cliente)
+            </summary>
+        </member>
+        <member name="T:BusTrackerApp.Helpers.ModelConverter">
+            <summary>
+            Convierte entre modelos de Supabase y modelos de la aplicación
+            </summary>
+        </member>
+        <member name="T:BusTrackerApp.Models.Supabase.BusFullInfo">
+            <summary>
+            Representa un bus con toda su información relacionada (ruta y conductor)
+            </summary>
+        </member>
         <member name="T:BusTrackerApp.ViewModels.DriverViewModel">
             <inheritdoc/>
             <inheritdoc/>

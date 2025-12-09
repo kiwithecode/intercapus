@@ -14,11 +14,11 @@
 		</data>
 		<key>BusTrackerApp.dll</key>
 		<data>
-		3RXaD7Ih2E2ZjoyceNFZbqCdT3E=
+		nzZD28nYu2GYGaS9KjRW8OLyQnk=
 		</data>
 		<key>BusTrackerApp.pdb</key>
 		<data>
-		xqqCTxIk/BOQLRdmN7TnqEMKqyw=
+		HAM8E7Xmv1fY2WIUgWMCoxpxDXg=
 		</data>
 		<key>CommunityToolkit.Mvvm.dll</key>
 		<data>
@@ -84,6 +84,22 @@
 		<data>
 		xJQ07FlwxhATDvaGWcHLlmAmsjc=
 		</data>
+		<key>Microsoft.IdentityModel.Abstractions.dll</key>
+		<data>
+		voL5DGXLT1srCzaZy535tSjWnck=
+		</data>
+		<key>Microsoft.IdentityModel.JsonWebTokens.dll</key>
+		<data>
+		gGztAVKRFy7Rg8zfT3J/K99C4ZE=
+		</data>
+		<key>Microsoft.IdentityModel.Logging.dll</key>
+		<data>
+		sQ8fNBOq+r0lNdZ4sq3BnfnKxD4=
+		</data>
+		<key>Microsoft.IdentityModel.Tokens.dll</key>
+		<data>
+		HQ1oV5lt4xNS/g815nONuzmvq6k=
+		</data>
 		<key>Microsoft.Maui.Controls.Maps.dll</key>
 		<data>
 		o3EJmnkqiiKWNqTT5FqaVRbmRYw=
@@ -136,9 +152,17 @@
 		<data>
 		WY/+BbFwW9/NoFAEjuQLN+OUcns=
 		</data>
+		<key>MimeMapping.dll</key>
+		<data>
+		8F3D9Ls/kkwdBiwiP7VBYlM+MG8=
+		</data>
 		<key>MonoTouchDebugConfiguration.txt</key>
 		<data>
 		HlmAtjuZZYt4rOfUtxY3eRZ7cWA=
+		</data>
+		<key>Newtonsoft.Json.dll</key>
+		<data>
+		8xMPf9S0FLWuwE64ftgA64TdIVQ=
 		</data>
 		<key>OpenSans-Regular.ttf</key>
 		<data>
@@ -159,6 +183,34 @@
 		<key>Settings.bundle/Root.plist</key>
 		<data>
 		nrVMGKClE6pvxn6IcBgG4it6i0A=
+		</data>
+		<key>Supabase.Core.dll</key>
+		<data>
+		/pmORGxLYSKMC1jqQ7JBa9oZBdY=
+		</data>
+		<key>Supabase.Functions.dll</key>
+		<data>
+		eO2/lZzQfWK1WJQZZyZEO/Zt7HA=
+		</data>
+		<key>Supabase.Gotrue.dll</key>
+		<data>
+		7aiky8XJGWFsa7hmVJQcJTqm/uk=
+		</data>
+		<key>Supabase.Postgrest.dll</key>
+		<data>
+		GK8/bsWBmx7qnBJzwnD3cgpHXoM=
+		</data>
+		<key>Supabase.Realtime.dll</key>
+		<data>
+		P/CjRYuKtVbGkMiAbuSZebrVRtU=
+		</data>
+		<key>Supabase.Storage.dll</key>
+		<data>
+		wOKKPnqwIlsFgUQ9EF0nIoG+Xbk=
+		</data>
+		<key>Supabase.dll</key>
+		<data>
+		t0FOwOAMwdCgIg1O3FswdSav+RQ=
 		</data>
 		<key>System.AppContext.dll</key>
 		<data>
@@ -372,6 +424,10 @@
 		<data>
 		9Gee13UajhhubFhnjgi+FgBge9U=
 		</data>
+		<key>System.IdentityModel.Tokens.Jwt.dll</key>
+		<data>
+		UgWEcOg6o3ci8C24anRXt9+J/Ho=
+		</data>
 		<key>System.Linq.Expressions.dll</key>
 		<data>
 		7fny6x9UtyVTZ/YT3gx3wVCX92M=
@@ -503,6 +559,10 @@
 		<key>System.Private.Xml.dll</key>
 		<data>
 		nWjMjUnqAdG37Ym9IhNHRJFYjXo=
+		</data>
+		<key>System.Reactive.dll</key>
+		<data>
+		Yk00Vx+hV2KrOKAelOdPwmJQcGw=
 		</data>
 		<key>System.Reflection.DispatchProxy.dll</key>
 		<data>
@@ -808,6 +868,10 @@
 		<data>
 		rdo7DNPKz9VrFIcj7ys4IsrR3kY=
 		</data>
+		<key>Websocket.Client.dll</key>
+		<data>
+		CLzKrejAuWe+xvhwpJV3809/tC4=
+		</data>
 		<key>WindowsBase.dll</key>
 		<data>
 		txSFMUWXYlM3YEbs3Y+pSFmBRH8=
@@ -1057,14 +1121,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WEd0B/ewGOZjbgxOcvvz+3hlBM1AeXl6WIdpSAbMQNo=
+			2tSS+Hba7omIPguzu8rqYSQ77bGZoO8+o+Qm3khZC6M=
 			</data>
 		</dict>
 		<key>BusTrackerApp.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8urognGSvfnobqZvQYLq76V7QxvOkhZL0gcW5hkQbP8=
+			GN4mG3Vk/+VaBkW+EHoRsHfArRQhaa/EquRHDLGe0ms=
 			</data>
 		</dict>
 		<key>CommunityToolkit.Mvvm.dll</key>
@@ -1172,6 +1236,34 @@
 			LpX4lYnrAPbD+mp4bIFn/jEPi4MuopGxI/SF2rI9+O4=
 			</data>
 		</dict>
+		<key>Microsoft.IdentityModel.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nhrx757uwJX2kjpIAc/GgRfCBMdnvkvMExEvPHiUzDY=
+			</data>
+		</dict>
+		<key>Microsoft.IdentityModel.JsonWebTokens.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AeWD1X0bTGZ9t8oukySUfn2QthF5H+FBiEhnFKL/Phg=
+			</data>
+		</dict>
+		<key>Microsoft.IdentityModel.Logging.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Uf1aYj57Qkm3YXagQpjOd+WdKaIa32/IA08luE2e7rA=
+			</data>
+		</dict>
+		<key>Microsoft.IdentityModel.Tokens.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Dlb1HkcNQzTM625LRx0Ox3ZFz8YuqFzdvFNOMW3Kpe0=
+			</data>
+		</dict>
 		<key>Microsoft.Maui.Controls.Maps.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -1263,11 +1355,25 @@
 			7Dv41l/tuFwfNz2a97dFzP8CdtqoSe1MG4EQi9Q5QDo=
 			</data>
 		</dict>
+		<key>MimeMapping.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Uw2YkoNwV+KXzYjSxhmBCoS7aqcCLIHIc5b7GBM/sKU=
+			</data>
+		</dict>
 		<key>MonoTouchDebugConfiguration.txt</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			n/NMp5DkQGppkjpBoyoV1mhEK36L/cuHFrOabOQafS0=
+			</data>
+		</dict>
+		<key>Newtonsoft.Json.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IsZJ91/OW+fHzNqIgEc7Y072ns8z9dGritiSyvR9Wgc=
 			</data>
 		</dict>
 		<key>OpenSans-Regular.ttf</key>
@@ -1296,6 +1402,55 @@
 			<key>hash2</key>
 			<data>
 			zi1Y0A+tVNNfppRDjT3LpbeC+xDRJTirIvMQJ0HkgMQ=
+			</data>
+		</dict>
+		<key>Supabase.Core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IyJ3U7gatHq3+N3cJpPWezjCB1xxF2rqrr6PLof2bhU=
+			</data>
+		</dict>
+		<key>Supabase.Functions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Z+YCS9cpyvUx04ceOl3MBxA9PC0J6uRb7f86F7VrOCI=
+			</data>
+		</dict>
+		<key>Supabase.Gotrue.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UcxSmsz6/Hc3eBKnLjxVPtidf9uO5PK2WOzWRFdBLiw=
+			</data>
+		</dict>
+		<key>Supabase.Postgrest.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B7IXAtGBpBwjc/383wN262O4DIVJ2mH4wdn2SPLyils=
+			</data>
+		</dict>
+		<key>Supabase.Realtime.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7qd9LyKergGKBs564DrX6OQV6tllRlhiY6arD4kD9zw=
+			</data>
+		</dict>
+		<key>Supabase.Storage.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BwPLo7bxSlBtVtdJmhv1jng3yimReawmgSLt8vzWons=
+			</data>
+		</dict>
+		<key>Supabase.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m1AST+kDCY7bYoIBff1xB9Tmcnot3FXs5ruNEeRwN1w=
 			</data>
 		</dict>
 		<key>System.AppContext.dll</key>
@@ -1669,6 +1824,13 @@
 			fDM2lfksbFleSjRPg9jI47HNs7MQTNOCw5GS9O6Rhv0=
 			</data>
 		</dict>
+		<key>System.IdentityModel.Tokens.Jwt.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m+3hRysA2R62CFiThrC+Cb2kRI47YyV19KEK0zaW3Y0=
+			</data>
+		</dict>
 		<key>System.Linq.Expressions.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -1898,6 +2060,13 @@
 			<key>hash2</key>
 			<data>
 			je2aMtVC9MbTzcKEYOlq/qhpxrOubs0OtYF+kWsLuoE=
+			</data>
+		</dict>
+		<key>System.Reactive.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			K2wx37H8YBmkKgB+0OXgBXTebqDEf+0MooK/O7J3Gww=
 			</data>
 		</dict>
 		<key>System.Reflection.DispatchProxy.dll</key>
@@ -2430,6 +2599,13 @@
 			<key>hash2</key>
 			<data>
 			2KcEQhGlFeo8bwrFNAh0BlFHNAmKqMS2B90WvrrObIc=
+			</data>
+		</dict>
+		<key>Websocket.Client.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Tm+7hqp/3IOsYKh8baYFWgidjYW8yJ5MdSuKg0Ftc7Q=
 			</data>
 		</dict>
 		<key>WindowsBase.dll</key>

@@ -34,6 +34,8 @@
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/zh-Hant/Microsoft.Maui.Controls.resources.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/runtimeconfig.bin
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/CommunityToolkit.Mvvm.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Supabase.Functions.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Supabase.Gotrue.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.Extensions.Configuration.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.Extensions.DependencyInjection.dll
@@ -43,6 +45,10 @@
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.Extensions.Logging.Debug.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.Extensions.Options.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.Extensions.Primitives.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.IdentityModel.Abstractions.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.IdentityModel.Logging.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.IdentityModel.Tokens.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.Maui.Controls.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.Maui.Controls.Maps.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.Maui.Controls.Xaml.dll
@@ -50,6 +56,16 @@
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.Maui.Essentials.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.Maui.Graphics.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.Maui.Maps.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/MimeMapping.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Newtonsoft.Json.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Supabase.Postgrest.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Supabase.Realtime.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Supabase.Core.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Supabase.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Supabase.Storage.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/System.IdentityModel.Tokens.Jwt.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/System.Reactive.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Websocket.Client.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/BusTrackerApp.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.CSharp.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-ios/iossimulator-arm64/publish/../BusTrackerApp.app/Microsoft.VisualBasic.Core.dll

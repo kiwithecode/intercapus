@@ -25,6 +25,9 @@ public static class MauiProgram
 		builder.Services.AddSingleton<ILocationService, LocationService>();
 		builder.Services.AddSingleton<IRouteSimulationService, RouteSimulationService>();
 
+		// Registrar Supabase Service (Singleton para mantener una única conexión)
+		builder.Services.AddSingleton<SupabaseService>(sp => SupabaseService.Instance);
+
 		// Registrar ViewModels
 		builder.Services.AddTransient<LoginViewModel>();
 		builder.Services.AddTransient<PassengerViewModel>();

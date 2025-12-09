@@ -34,6 +34,8 @@
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/zh-Hant/Microsoft.Maui.Controls.resources.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/runtimeconfig.bin
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/CommunityToolkit.Mvvm.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Supabase.Functions.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Supabase.Gotrue.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.Extensions.DependencyInjection.dll
@@ -43,6 +45,10 @@
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.Extensions.Logging.Debug.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.Extensions.Options.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.Extensions.Primitives.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.IdentityModel.Abstractions.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.IdentityModel.Logging.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.IdentityModel.Tokens.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.Maui.Controls.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.Maui.Controls.Maps.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.Maui.Controls.Xaml.dll
@@ -50,6 +56,16 @@
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.Maui.Essentials.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.Maui.Graphics.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.Maui.Maps.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/MimeMapping.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Newtonsoft.Json.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Supabase.Postgrest.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Supabase.Realtime.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Supabase.Core.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Supabase.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Supabase.Storage.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/System.IdentityModel.Tokens.Jwt.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/System.Reactive.dll
+/Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Websocket.Client.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/BusTrackerApp.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.CSharp.dll
 /Users/kiwimac/CascadeProjects/BusTrackerApp/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/publish/../BusTrackerApp.app/Contents/MonoBundle/Microsoft.VisualBasic.Core.dll
